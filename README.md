@@ -64,27 +64,62 @@ The goal of DevStack is to create a centralized platform where developers can qu
 Built with ❤️ using React and modern web technologies.
 
 ---
+## Q & A
 
-##Q & A
+### i. What is JSX, and why is it used in React?
 
-i. What is JSX, and why is it used in React?
-  = JSX means JavaScript XML . its an extended version of js. it allows to write HTML code inside react. jsx allow us to write and add HTML in react.
-  
-ii. What is the difference between props and state?
-  = the properties we pass in a component is called props. state is a built-in react method that is used to change only that part where we make changes by doing something on the web page.
-  
-iii. What does the useState hook do, and where did you use it in this project?
-  = useState hook is used to make change when we trigger someting in the web page,it gives us a variable and a function, by calling the function we can make changes where the variable has been used.
-  
-iv. What does the useEffect hook do, and why did you need it to load the JSON data?
-  = useEffect gives sideEffect to a component. while fetching data from a json file or an api we use uesEffect to show something when the data fetching is not successfull.
-  
-v. Why does every item in a .map() list need a unique key prop?
-  = every item in a map need a unique key prop so that the data doesnt mix up with another data.
-  
-vi. What is conditional rendering? Show one place you used it (example: the empty stack message).
-  = conditonal rendering is using conditional operator to show or do different acts in different conditions. ex: {adder.length !== 0 ? (<Cart />) : (<p>Your stack is empty.</p>)}
-  
-vii. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
-  = passing data from parent to child is easy as jsx is uni-directional , i use props to send data from parent to child. but sending data from child to parent is complicated, i use useState in the parent component and pass the state props in the child component then make changes in the state in child , thats how it send back something in parent component.
-  
+**Answer:**
+JSX means JavaScript XML. It's an extended version of JS. It allows us to write HTML code inside React. JSX allows us to write and add HTML in React.
+
+<br>
+
+### ii. What is the difference between props and state?
+
+**Answer:**
+The properties we pass into a component are called props. State is a built-in React method that is used to change only that part where we make changes by doing something on the web page.
+
+<br>
+
+### iii. What does the useState hook do, and where did you use it in this project?
+
+**Answer:**
+The `useState` hook is used to make changes when we trigger something on the web page. It gives us a variable and a function. By calling the function, we can make changes where the variable has been used.
+
+<br>
+
+### iv. What does the useEffect hook do, and why did you need it to load the JSON data?
+
+**Answer:**
+`useEffect` gives a side effect to a component. While fetching data from a JSON file or an API, we use `useEffect` to show something when the data fetching is not successful.
+
+<br>
+
+### v. Why does every item in a `.map()` list need a unique key prop?
+
+**Answer:**
+Every item in a `.map()` needs a unique key prop so that the data doesn't mix up with another data.
+
+<br>
+
+### vi. What is conditional rendering? Show one place you used it (example: the empty stack message).
+
+**Answer:**
+Conditional rendering is using a conditional operator to show or do different actions in different conditions.
+
+Example:
+
+{adder.length !== 0 ? (
+  <Cart />
+) : (
+  <p>Your stack is empty.</p>
+)}
+
+<br>
+
+### vii. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+**Answer:**
+Passing data from parent to child is easy as JSX is uni-directional. I use props to send data from parent to child.
+
+But sending data from child to parent is complicated. I use `useState` in the parent component and pass the state props to the child component. Then I make changes in the state from the child. That's how it sends something back to the parent component.
+
