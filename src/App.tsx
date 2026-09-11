@@ -35,7 +35,7 @@ function App() {
       <Suspense
         fallback={
           <div className="flex items-center justify-center">
-            <span className="loading loading-spinner loading-xl"></span>
+            <span className="loading loading-spinner w-24 h-24"></span>
           </div>
         }
       >

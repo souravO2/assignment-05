@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { TechTypes } from "../TechTypes";
 import { RxCross2 } from "react-icons/rx";
+import { toast } from "sonner";
 
 interface CartCardProps {
   adder: TechTypes[];
@@ -10,6 +11,7 @@ interface CartCardProps {
 
 const CartCard = ({ card, adder, setAdder }: CartCardProps) => {
   const cardHandler = (item: TechTypes) => {
+    toast.warning(`${card.name} has been removed from stack.`)
     const newCard = adder.filter((c) => c !== item);
     setAdder(newCard);
   };

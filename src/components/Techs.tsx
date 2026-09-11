@@ -2,6 +2,7 @@ import { use, useState } from "react";
 import type { TechTypes } from "../TechTypes";
 import Card from "./Card";
 import Cart from "./Cart";
+import { toast } from "sonner";
 
 interface TechsProps {
   techPromise: Promise<TechTypes[]>;
@@ -41,7 +42,10 @@ const Techs = ({ techPromise }: TechsProps) => {
           </div>
 
           <button
-            onClick={() => setAdder([])}
+            onClick={() => {
+              toast.warning(`Stack has been cleared.`);
+              return setAdder([]);
+            }}
             className={`${adder.length === 0 ? "hidden" : ""} btn rounded-xl border border-red-500 text-red-600 font-bold w-full text-sm sm:text-base`}
           >
             Remove All

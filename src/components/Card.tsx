@@ -1,6 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import type { TechTypes } from "../TechTypes";
 import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "sonner";
 
 interface CardProps {
   tech: TechTypes;
@@ -11,6 +12,7 @@ interface CardProps {
 const Card = ({ tech, adder, setAdder }: CardProps) => {
   const [selected, setSelected] = useState(false);
   const adderHandler = (tech: TechTypes) => {
+    toast.success(`${tech.name} added to stack.`)
     setSelected(true);
     setAdder([...adder, tech]);
   };
@@ -54,10 +56,10 @@ const Card = ({ tech, adder, setAdder }: CardProps) => {
 
         <button
           onClick={() => adderHandler(tech)}
-          className={`${selected ? `bg-white text-black border border-gray-200` : "bg-black text-white"} btn mt-5 sm:mt-6 w-full rounded-xl py-2.5 sm:py-3 text-sm sm:text-base font-semibold transition-all duration-200 hover:bg-[#d91b7e]`}
+          className={`${selected ? `bg-white text-green-500 border border-green-200` : "bg-black text-white"} btn mt-5 sm:mt-6 w-full rounded-xl py-2.5 sm:py-3 text-sm sm:text-base font-semibold transition-all duration-200 hover:bg-[#d91b7e]`}
           disabled={selected}
         >
-          {selected ? "Added" : "Add to Stack"}
+          {selected ? "✓ Added to Stack" : "Add to Stack"}
         </button>
       </div>
     </div>
