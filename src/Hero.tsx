@@ -2,7 +2,7 @@ import Banner from "./assets/banner-stack.png";
 
 const Hero = () => {
   return (
-    <main className="flex flex-col items-center justify-between gap-12 px-5 py-12 lg:container lg:mx-auto lg:flex-row lg:gap-25 lg:px-0 lg:py-20">
+    <main className="flex flex-col items-center justify-between gap-12 px-5 py-12 container lg:mx-auto lg:flex-row lg:gap-25 lg:px-0 lg:py-20">
       <div className="flex flex-col justify-center gap-y-6 lg:gap-y-10 text-center lg:text-left w-full lg:w-1/2">
         <h1 className="font-extrabold text-[40px] sm:text-[48px] lg:text-[60px] leading-tight lg:leading-16">
           Build Your Ideal

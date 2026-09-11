@@ -41,7 +41,7 @@ const Card = ({ tech, adder, setAdder }: CardProps) => {
           {tech.description}
         </p>
 
-        <div className="md:flex-col xl:flex-row font-semibold mt-4 sm:mt-5 flex items-center justify-between gap-1 sm:gap-2 text-xs sm:text-sm">
+        <div className="font-semibold mt-4 sm:mt-5 flex items-center justify-between gap-1 sm:gap-2 text-xs sm:text-sm">
           <span className="rounded-lg bg-gray-100 px-2 sm:px-3 py-1 sm:py-1.5 font-medium text-gray-600">
             {tech.category}
           </span>

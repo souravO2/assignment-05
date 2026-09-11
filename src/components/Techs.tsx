@@ -14,8 +14,8 @@ const Techs = ({ techPromise }: TechsProps) => {
   const [adder, setAdder] = useState<TechTypes[]>([]);
 
   return (
-    <div className="lg:container px-10 mx-auto my-10 grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-4">
-      <div className="col-span-1 grid grid-cols-1 gap-10 md:gap-2 lg:gap-10 md:col-span-2 md:grid-cols-2 lg:col-span-3 lg:grid-cols-3">
+    <div className="xl:container px-10 mx-auto my-10 grid grid-cols-1 gap-10 md:grid-cols-3 xl:grid-cols-4">
+      <div className="col-span-1 grid grid-cols-1 gap-10 md:gap-2 lg:gap-10 md:col-span-2 md:grid-cols-2 xl:col-span-3 xl:grid-cols-3">
         {techs.map((tech) => (
           <Card key={tech.id} tech={tech} adder={adder} setAdder={setAdder} />
         ))}
