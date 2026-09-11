@@ -31,7 +31,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="max-[640px]:hidden flex flex-col items-start lg:items-center">
+          <div className="max-[640px]:hidden flex flex-col items-center">
             <div className="text-left flex flex-col gap-2">
               <h2 className="font-bold">PRODUCT</h2>
 
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="max-[640px]:hidden flex flex-col items-start lg:items-center">
+          <div className="max-[640px]:hidden flex flex-col items-center">
             <div className="text-left flex flex-col gap-2">
               <h2 className="font-bold">COMPANY</h2>
 
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="max-[640px]:hidden flex flex-col items-start lg:items-center">
+          <div className="max-[640px]:hidden flex flex-col items-center">
             <div className="text-left flex flex-col gap-2">
               <h2 className="font-bold">LEGAL</h2>
 

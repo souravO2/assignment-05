@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import type { TechTypes } from "../TechTypes";
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import { toast } from "sonner";
 
 interface CardProps {
@@ -10,10 +10,9 @@ interface CardProps {
 }
 
 const Card = ({ tech, adder, setAdder }: CardProps) => {
-  const [selected, setSelected] = useState(false);
+  const selected = adder.some(item => item.id === tech.id);
   const adderHandler = (tech: TechTypes) => {
     toast.success(`${tech.name} added to stack.`)
-    setSelected(true);
     setAdder([...adder, tech]);
   };
 

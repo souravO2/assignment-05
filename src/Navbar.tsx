@@ -12,7 +12,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex sticky top-0 bg-white z-50 justify-between items-center p-4 lg:container mx-auto">
+    <nav className="sticky top-0 bg-white z-50 p-4 ">
+      <div className="flex justify-between items-center w-full lg:container mx-auto">
       <button className="btn block sm:hidden p-1 bg-transparent border-none">
         <RxHamburgerMenu className="w-7 h-7" />
       </button>
@@ -79,6 +80,7 @@ const Navbar = () => {
         >
           Sign Up
         </button>
+      </div>
       </div>
     </nav>
   );
